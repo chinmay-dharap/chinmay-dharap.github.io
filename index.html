@@ -827,6 +827,19 @@ Chinmay would be an asset to any team.
   <script src="assets/vendor/aos/aos.js"></script>
   <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
   <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+  <script type="text/javascript">
+$(document).ready(function () {
+    //Disable cut copy paste
+    $('body').bind('cut copy paste', function (e) {
+        e.preventDefault();
+    });
+   
+    //Disable mouse right click
+    $("body").on("contextmenu",function(e){
+        return false;
+    });
+});
+</script>
 
 
   <!-- Template Main JS File -->
