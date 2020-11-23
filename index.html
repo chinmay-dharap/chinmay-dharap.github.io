@@ -26,24 +26,24 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-   <script type="text/JavaScript">
-function killCopy(e){
-return false
-}
-function reEnable(){
-return true
-}
-document.onselectstart=new Function ("return false")
-if (window.sidebar){
-document.onmousedown=killCopy
-document.onclick=reEnable
-}
-</script>
+
 
 </head>
 
 <body>
+  <script type="text/JavaScript">
+    $(document).ready(function() {
+      $('body').bind('cut copy paste', function(e) {
+        e.preventDefault();
+      })
+      $('body').on("contextmenu", function(e) {
+        return false;
+      })
+    })
+    
+  
 
+  </script>
   <!-- ======= Mobile nav toggle button ======= -->
   <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
 
