@@ -31,19 +31,7 @@
 </head>
 
 <body>
-  <script type="text/JavaScript">
-    $(document).ready(function() {
-      $('body').bind('cut copy paste', function(e) {
-        e.preventDefault();
-      })
-      $('body').on("contextmenu", function(e) {
-        return false;
-      })
-    })
-    
   
-
-  </script>
   <!-- ======= Mobile nav toggle button ======= -->
   <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
 
@@ -845,6 +833,17 @@ Chinmay would be an asset to any team.
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script type="text/JavaScript">
+    $(document).ready(function() {
+      $('body').bind('cut copy paste', function(e) {
+        e.preventDefault();
+      })
+      $('body').on("contextmenu", function(e) {
+        return false;
+      })
+    })
+    
+  </script>
 
 </body>
 
